@@ -116,4 +116,8 @@ public class KeyConfig {
      */
     public static final KeyDTO KEY_MI_YU= new KeyDTO("m",true);
 
+     /**
+     * 英语句子
+     */
+    public static final KeyDTO KEY_ENGLISH_WORD = new KeyDTO("e",true);
 }
