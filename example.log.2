@@ -1,0 +1,598 @@
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":1999,"month":2,"day":15,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"},{"year":1999,"month":8,"day":11,"chineseFlag":false,"countFlag":false,"info":"生日快乐哦~~"},{"year":2020,"month":7,"day":8,"chineseFlag":true,"countFlag":true},{"year":2020,"month":7,"day":8,"chineseFlag":true,"countFlag":false,"info":"周年快乐！！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：java.lang.NullPointerException
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: java.lang.NullPointerException
+	at com.pt.vx.service.api.ApiMessageService.getHistoryToday(ApiMessageService.java:108)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:42)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1626)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_pxwQahvKdhB2xd2WB6FnBOK0DJrp36RQhJkV__6xYV_ZwnrsDR6ZQKADlXTbqNLN7Co9L7fVhPUJbZF5OIpRrD0lpSFTC7CD3a1pgwtOBXXkWlaMn3U-7EpS6IUGDLbAIATQY","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"153"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"birthDay1":{"value":"303"},"birthDay2":{"value":"1508"},"birthDay3":{"value":"322"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676079891671187461}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：3878 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：java.lang.NullPointerException
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: java.lang.NullPointerException
+	at com.pt.vx.service.api.ApiMessageService.getHistoryToday(ApiMessageService.java:108)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:42)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1626)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_k3NWXyB8x2qKrqzVITtgmVN0zSW3omDHmO7vG20Xkz-cLe_ZoJYlN7HrbqdwwQSgESsVz7EAo5YJnhbi5ejG1briAvyQzBbClrz0tMtcXunmtW68FD95By_v1lEADWhABAILE","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676083666360238081}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：4752 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：sentence,获取的结果为：null
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_uz8DFhgFVOT2T_X-Tsoi2cK5tZ2pgba1NNE9NFs6KUgysN4Ystp6_zX5N-w-qKX_yBbY4Iy2VZb5hhALuRU1EtH74cCSYDsBS1Vt6OGNXZM5bj6HZ_fKo6hYxj0JJKgADACCD","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676086064109617160}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：3413 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：duJiTang,获取的结果为：null
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_8oW1uOK_54mQ8ggiBnkDhGNYROANRIr9Kf5Ydub-ymxxlXM5_a8YS23kBrjEl6avUYufrls-hmNMXnc1l_AVJYcBOpVwZfvG0Ibo0iVmKivHpgXbL9BvxfQA0wYBJOaAGARZE","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676086729343008768}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：3704 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：java.lang.NullPointerException
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: java.lang.NullPointerException
+	at com.pt.vx.service.api.ApiMessageService.getHistoryToday(ApiMessageService.java:108)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:42)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_rGXRSL58Ku8xrU3BHXK-xsCp2fwRzuHpe273c53sAIGUHGv1k52inj3IBTeSgIlONv6N2JJ5TqxZyWFyc86tmFaCwd_-h8FvBPv4BQidtP7gCXhiyE-7f7CXJ2YTOXdAHAJEN","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676087514315390978}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：27346 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - ---获取谜语--- 谜题：null，提示：null，谜底：null
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：miyu,获取的结果为：null(提示：null)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_-h_869VDjy3aYDQQewpfS-upabGY32hELtF1Dcc0_MCjlxfPEGORrUj5UCGi61KKArjQOHD6Zb4hGRYE6mQsUP6Kr0zFSJVrRcDl8yN1F5zP1Qb7mzuEMit271IVDGaAAAAIL","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"null(提示：null)"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676088067929964546}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：3699 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：sentence,获取的结果为：null
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_u2BJtDCmkDVlrW5fBnkDhGNYROANRIr9Kf5YdlklducR1_IKT9JwQxbIfivTU3-t3Ec1HAcDVs89uM6h9629kssAYI7wYZhmt_URJGjeuELT71iWOCI7nI2aDxMPBNeAIAVHT","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676089548267618310}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：78213 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：java.lang.NullPointerException
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: java.lang.NullPointerException
+	at com.pt.vx.service.api.ApiMessageService.getHistoryToday(ApiMessageService.java:106)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:40)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_oYAnUJS5zQhSM1Ef8e1yilIRJcEku6lMrNz7ydCtebBINEvPV91BIt2Bdcec9yNJaqd-sYmOOex9Gb360z43sb5x-T9j2Z7E9ZD_ytQm6TQQ8UpvloEAXsRYHy0ZCJeAEAVYF","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676090600098398213}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：15807 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：java.lang.ClassCastException: cn.hutool.json.JSONObject cannot be cast to cn.hutool.json.JSONArray
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: cn.hutool.json.JSONObject cannot be cast to cn.hutool.json.JSONArray
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: java.lang.ClassCastException: cn.hutool.json.JSONObject cannot be cast to cn.hutool.json.JSONArray
+	at cn.hutool.json.JSONGetter.getJSONArray(JSONGetter.java:78)
+	at com.pt.vx.service.api.ApiMessageService.getHistoryToday(ApiMessageService.java:104)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:40)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1626)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_9jT-sUHookEqrBT8F5o_UqYzTAmvI9p-K2Hbv2YIFW5Kg_xrcg_ZH2aCuxD7dcwsa19RBZ0M9uVnbC_HhlZNPtzYM9oS-dc9YwLFTj1ZqQXW5prW7jG6vemZFKMUAUhAEACIC","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676093429777203200}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：3752 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：我骄傲了十几年看见你我就怂了。
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_aW9Qs5BVv3Cl4DtzMp2tEAG1pniRX3AowItNgP8W9lVvh215Ufad1TiL8qeLNLXafKHSvgfJxD5iiNYkqsrO43YClMiCYcmIoHJD4PMixfW91ViFufVbHBxDQPwRTMgABALNG","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"我骄傲了十几年看见你我就怂了。"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676096275209814020}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：70047 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - ---获取谜语--- 谜题：null，提示：null，谜底：null
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：miyu,获取的结果为：null(提示：null)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_aW9Qs5BVv3Cl4DtzMp2tEAG1pniRX3AowItNgP8W9lVvh215Ufad1TiL8qeLNLXafKHSvgfJxD5iiNYkqsrO43YClMiCYcmIoHJD4PMixfW91ViFufVbHBxDQPwFRJgABAOAS","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"null(提示：null)"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676096514704572421}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：3639 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：duanZi,获取的结果为：一天，两个农民在集市上相遇了。<br>农民甲问农民乙：前几天你的牛病了，你给它吃了什么药呀?<br>农民乙：桐树油阿。<br>几天后，两人再次在集市上相遇。<br>农民甲：你说上次你给你家牛吃的是什么药?<br>农民乙：上次不是说了吗，喂的桐树油阿！<br>农民甲：那为什么我的牛吃了之后死了？<br>农民乙：对啊，我的牛也死了。<br>
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_HO6buQgS11lXFXf1I4IpCtwmaEbprveSm78GfVma713dfGS2sLMGYAqadumEll-SMDOer3TULqCnAKYr-a-ad_OzZjSnPrWedij8NrxW6Lqm-f2V32j317Y3TfUOWAbAEAYGK","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"randomInfoSplit234":{"value":"。\r<br>农民甲：你说上次你给你家牛吃"},"week1":{"value":"日"},"birthDay":{"value":"180"},"randomInfoSplit23456":{"value":"了吗，喂的桐树油阿！\r<br>农民甲：那"},"randomInfoSplit2345678":{"value":"乙：对啊，我的牛也死了。\r<br>"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"randomInfoSplit":{"value":"农民甲问农民乙：前几天你的牛病了，你给它"},"randomInfoSplit234567":{"value":"为什么我的牛吃了之后死了？\r<br>农民"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"一天，两个农民在集市上相遇了。\r<br>"},"randomInfoSplit23":{"value":"。\r<br>几天后，两人再次在集市上相遇"},"randomInfoSplit2":{"value":"吃了什么药呀?\r<br>农民乙：桐树油阿"},"week4":{"value":"三"},"randomInfoSplit2345":{"value":"的是什么药?\r<br>农民乙：上次不是说"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676096909120143366}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：16483 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：java.lang.ClassCastException: cn.hutool.json.JSONObject cannot be cast to cn.hutool.json.JSONArray
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: cn.hutool.json.JSONObject cannot be cast to cn.hutool.json.JSONArray
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: java.lang.ClassCastException: cn.hutool.json.JSONObject cannot be cast to cn.hutool.json.JSONArray
+	at cn.hutool.json.JSONGetter.getJSONArray(JSONGetter.java:78)
+	at com.pt.vx.service.api.ApiMessageService.getHistoryToday(ApiMessageService.java:116)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:43)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_5_q5vvnGp8TnXxkhSUBcVNZxJKHTrR6Fhf7Cc-RpnBdp8z8PyYyU1VwtOJogwpVsWbZLw7RGfgnF-NiG7pXosK3hd-FdXi2rn-b8LCmVl3YLI_hcRXI3B9mry6ADFQdAJAVXI","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676101003834589194}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：15319 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - ---获取谜语--- 谜题：null，提示：null，谜底：null
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：miyu,获取的结果为：null(提示：null)
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：sentence,获取的结果为：null
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - ---获取谜语--- 谜题：者，提示：打一成语，谜底：有目共睹
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：miyu,获取的结果为：者(提示：打一成语)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_JChosxPKcwwUlXe4nwH7rEQgMIFfsADoLDu9W3NCqyV53eeLWkSx4xjKaxybLCqE7KoDjC2LRZrmwMjlS3taKYuDnzJiCjfGDWyxVc7pB-8neouQU2O5p6wzc48GRFiAGAVGU","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"者(提示：打一成语)"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676112134678544390}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：19177 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：我本已百毒不侵，偏偏你是第101种，而且无药可解。
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_gje4OE5z8PF9fTewcOXPfaweXhLiL9gm8ejtBn_i6JE-szSx01vT_9UuqIF_ItqAn2bYlf2vVTNIhR3fjhvTwMimZg7dHiToS0ztc7TyW_EU4sQKd75rxJiXkD8HRGdADAOYN","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"我本已百毒不侵，偏偏你是第101种，而且"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676113224006402059}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：17214 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：“我感觉地震了，怎么老是在动。” “没有啊” “
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - ---获取谜语--- 谜题：言而有信可相交，提示：打一字，谜底：何
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：miyu,获取的结果为：言而有信可相交(提示：打一字)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85__0KTCQhINN3du4oQujFKzN7SjtdhmwdbN5MD6h_CRvN6NmjrwrxyQjZUC9E5qLC9jjg95xbCICShUKFLiA5MB4D91b_v4ie2bB0hNUWvSC9GjrD2h4zKQThvPzEZNVgAAAFTB","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"言而有信可相交(提示：打一字)"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676160168753922054}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：22101 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.ExecutionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+	at java.lang.System.arraycopy(Native Method)
+	at java.lang.AbstractStringBuilder.insert(AbstractStringBuilder.java:1215)
+	at java.lang.StringBuilder.insert(StringBuilder.java:338)
+	at com.pt.vx.service.api.ApiMessageService.getQinghua(ApiMessageService.java:72)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:33)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_RAqpZvOzNR2cBtk_oM5oWGmTeW5CJrECBdmVDbDfjC9p8AzgZQ4rB9hsNTzuwvG7ncgRAaVJFgY7jvHJF6isPqAgWTyqZaJUVqDSuVJFWdOAtMM-eAz44enFU1AZUViAHAKFG","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676160776810561543}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：9879 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：你临水而伫，依窗远望，我千里迢迢涉水而来
+，只是为了倾听那花开的季节，将一朵花而
+香息温存在掌心种植，仿佛听到了桃蕊的心
+在律动，那掐似少女的情怀，在等待渡她的
+良人。将一朵花种植在心底，不求春花无，
+不求相应成趣，惟愿细水长流，孕育一枚殷
+红的果子，将一段情怀，抵达心灵深处纷纷
+绽放。
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_GduxVCQYeDv6hNun3imMjD3fXQTsQ0lw1dl3pzmXqWLqkvu5l3qVvAWHP03O_hOhEosQ4nfhVljpks_3gJRyfCMPNT2fhh5vUdBWi5UNj-anlWAY72WjnUR3nr8NQBjAJAFIT","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"randomInfoSplit234":{"value":"\n良人。将一朵花种植在心底，不求春花无，"},"week1":{"value":"日"},"birthDay":{"value":"180"},"randomInfoSplit23456":{"value":"\n红的果子，将一段情怀，抵达心灵深处纷纷"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"randomInfoSplit":{"value":"\n，只是为了倾听那花开的季节，将一朵花而"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"你临水而伫，依窗远望，我千里迢迢涉水而来"},"randomInfoSplit23":{"value":"\n在律动，那掐似少女的情怀，在等待渡她的"},"randomInfoSplit2":{"value":"\n香息温存在掌心种植，仿佛听到了桃蕊的心"},"week4":{"value":"三"},"randomInfoSplit2345":{"value":"\n不求相应成趣，惟愿细水长流，孕育一枚殷"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676161174514466826}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：14270 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+java.util.concurrent.ExecutionException: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at cn.hutool.json.JSONTokener.syntaxError(JSONTokener.java:396)
+	at cn.hutool.json.JSONParser.parseTo(JSONParser.java:51)
+	at cn.hutool.json.ObjectMapper.mapFromTokener(ObjectMapper.java:239)
+	at cn.hutool.json.ObjectMapper.mapFromStr(ObjectMapper.java:215)
+	at cn.hutool.json.ObjectMapper.map(ObjectMapper.java:98)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:210)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:187)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:142)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:125)
+	at cn.hutool.json.JSONUtil.parseObj(JSONUtil.java:87)
+	at com.pt.vx.service.api.ApiMessageService.getDuanZi(ApiMessageService.java:86)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:35)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_5oaDPYSU-7476ptzqG0mNds557b4op3NITVsjK4BduG2xWzKMN8FNcSsWFePd0IwrRcMWUpd4_3LO_8xoTc8z2cyxqTORCJoq1YZv78cDX8DCsjd6fx3XnRiHiALFReAHAPJV","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676167000889262082}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：13824 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - ---获取谜语--- 谜题：身穿化妆服，面带魔鬼具，提示：打一国外节日，谜底：万圣节
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：miyu,获取的结果为：身穿化妆服，面带魔鬼具(提示：打一国外节日)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_Zd1QOYra9CxpqpR6HQrJ3n08FGpf5p2frsq0ERzDzEyoK1AfxsjvWTGZ5BPswzjHmc6l5YBZc76krzboIgTx33qhU5OQ2XZOo3MoEo9PtVCUB8_ST5GlCx3HLwQEQAfAAAAMW","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"身穿化妆服，面带魔鬼具(提示：打一国外节"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676167459326689286}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：17938 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+java.util.concurrent.ExecutionException: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at cn.hutool.json.JSONTokener.syntaxError(JSONTokener.java:396)
+	at cn.hutool.json.JSONParser.parseTo(JSONParser.java:51)
+	at cn.hutool.json.ObjectMapper.mapFromTokener(ObjectMapper.java:239)
+	at cn.hutool.json.ObjectMapper.mapFromStr(ObjectMapper.java:215)
+	at cn.hutool.json.ObjectMapper.map(ObjectMapper.java:98)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:210)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:187)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:142)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:125)
+	at cn.hutool.json.JSONUtil.parseObj(JSONUtil.java:87)
+	at com.pt.vx.service.api.ApiMessageService.getDuanZi(ApiMessageService.java:86)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:35)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_Zd1QOYra9CxpqpR6HQrJ3n08FGpf5p2frsq0ERzDzEyoK1AfxsjvWTGZ5BPswzjHmc6l5YBZc76krzboIgTx33qhU5OQ2XZOo3MoEo9PtVCUB8_ST5GlCx3HLwQDFXfAAAXZR","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676167758514782213}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：10471 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：爱，最需要的是舒坦。如果感觉自由、舒服、安心，你就爱对了；如果感觉处处被掣肘、受控制、没了自我，就该考虑调整了。爱，那就是互相依靠，相互温暖，相伴鼓励一起走向那个未知的未来。爱情这件事情，最充满玄机，什么时候遇到什么样的人，那几乎是命中注定。爱情不是找到的，一定是遇到的。历经千回百转的大概不是爱情，爱情一定是，等了又等，然后，她出现了，你认定了，这就是爱了。
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_sH385FKDGrJ7mmSjwCSt7fmLfZWvXr6zVhce62tgegY3EEe3IgtGXPeh4mYuMvzwKUgoJacpUJhWsJDOBpsGdtBIfY5rpQDbO5z269QUO3jGInywu-pOoVgNS-AKVUgABAZKJ","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"randomInfoSplit234":{"value":"个未知的未来。爱情这件事情，最充满玄机，"},"week1":{"value":"日"},"birthDay":{"value":"180"},"randomInfoSplit23456":{"value":"。爱情不是找到的，一定是遇到的。历经千回"},"randomInfoSplit2345678":{"value":"，然后，她出现了，你认定了，这就是爱了。"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"randomInfoSplit":{"value":"安心，你就爱对了；如果感觉处处被掣肘、受"},"randomInfoSplit234567":{"value":"百转的大概不是爱情，爱情一定是，等了又等"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"爱，最需要的是舒坦。如果感觉自由、舒服、"},"randomInfoSplit23":{"value":"是互相依靠，相互温暖，相伴鼓励一起走向那"},"randomInfoSplit2":{"value":"控制、没了自我，就该考虑调整了。爱，那就"},"week4":{"value":"三"},"randomInfoSplit2345":{"value":"什么时候遇到什么样的人，那几乎是命中注定"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676169228400230415}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：28612 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - ---获取谜语--- 谜题：火烧灵柩，提示：打一字，谜底：爧（“灵”的繁体字是“靈”）
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：miyu,获取的结果为：火烧灵柩(提示：打一字)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_8y7lK6bPYDbrHbkabaHSGngZ19S4Tf2rpEREBcpr5YEPXVY9xtiQoHzbx46r7nAu7p_UEwCwYn_8FiT66xa3_FWCvuVquEZNJg9HWl8bJInt_9dq0BLkuN5ZM4MGJNcAFAUXB","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"火烧灵柩(提示：打一字)"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676172160269058050}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：13147 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：真爱是无处不在的。爱
+不是简单的喜欢，而
+是永恒的感动。每分
+钟都想在一起，是热
+恋的状态。当激情在
+生活和时间的磨砺下
+逐渐平息，我们会发
+现，爱就在你我身边
+。它是你哭泣时对方
+递过来的一条毛巾，
+是你无助时一个可以
+依靠的臂膀，是你走
+进人生低谷时的不离
+不弃。真爱朴素无华
+，需要用心去感受。
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_8y7lK6bPYDbrHbkabaHSGngZ19S4Tf2rpEREBcpr5YEPXVY9xtiQoHzbx46r7nAu7p_UEwCwYn_8FiT66xa3_FWCvuVquEZNJg9HWl8bJInt_9dq0BLkuN5ZM4MPLBcAFATPF","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"randomInfoSplit234":{"value":"\n。它是你哭泣时对方\n递过来的一条毛巾，"},"week1":{"value":"日"},"birthDay":{"value":"180"},"randomInfoSplit23456":{"value":"\n进人生低谷时的不离\n不弃。真爱朴素无华"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"randomInfoSplit":{"value":"\n是永恒的感动。每分\n钟都想在一起，是热"},"randomInfoSplit234567":{"value":"\n，需要用心去感受。"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"真爱是无处不在的。爱\n不是简单的喜欢，而"},"randomInfoSplit23":{"value":"\n逐渐平息，我们会发\n现，爱就在你我身边"},"randomInfoSplit2":{"value":"\n恋的状态。当激情在\n生活和时间的磨砺下"},"week4":{"value":"三"},"randomInfoSplit2345":{"value":"\n是你无助时一个可以\n依靠的臂膀，是你走"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676172443434909700}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：13705 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+java.util.concurrent.ExecutionException: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at cn.hutool.json.JSONTokener.syntaxError(JSONTokener.java:396)
+	at cn.hutool.json.JSONParser.parseTo(JSONParser.java:51)
+	at cn.hutool.json.ObjectMapper.mapFromTokener(ObjectMapper.java:239)
+	at cn.hutool.json.ObjectMapper.mapFromStr(ObjectMapper.java:215)
+	at cn.hutool.json.ObjectMapper.map(ObjectMapper.java:98)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:210)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:187)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:142)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:125)
+	at cn.hutool.json.JSONUtil.parseObj(JSONUtil.java:87)
+	at com.pt.vx.service.api.ApiMessageService.getDuanZi(ApiMessageService.java:86)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:35)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_QliWju05_Iqn-peVHDKpLh0uyvFMkHLrqCiFvFMMWT2EpZnEt3xnT8jdyrWJFLeno4DSvMRgyklxs02bgwLVmFA2azrzSV1LgQMpRYzJBqtc2EDkcKLTgNGvDCQPSMaAAAFIC","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676177964464373769}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：8189 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：我不是碰不到更好的，而是因为已经有你，我不想再碰到更好的。我不是不会对别人动心，而是因为已经有你，我就觉得没必要再对其他人动心。我不是不会爱上别的人，而是我更加懂得珍惜你，能在一起不容易，即使你不是最好的，甚至不是最适合我的，但却是我最珍惜的。
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_nV8aLKEO_SuSfECRfV60u-AVeF7mzEZEKYqDuExSYpStVG8FZk0H7FwBFZO62MxI1Vxf7DbIJvy7mzUWTdj8XgUHoACuNNCWw8t0ANICEy5X81LKNLX1dPwhdHIWXDgAGAKLR","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"randomInfoSplit234":{"value":"懂得珍惜你，能在一起不容易，即使你不是最"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"randomInfoSplit":{"value":"不想再碰到更好的。我不是不会对别人动心，"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"我不是碰不到更好的，而是因为已经有你，我"},"randomInfoSplit23":{"value":"人动心。我不是不会爱上别的人，而是我更加"},"randomInfoSplit2":{"value":"而是因为已经有你，我就觉得没必要再对其他"},"week4":{"value":"三"},"randomInfoSplit2345":{"value":"好的，甚至不是最适合我的，但却是我最珍惜"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676178351598632965}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：13445 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - ---获取谜语--- 谜题：河边枝叶随风摆,条条细枝垂下来,岸边树木常见我,池塘边上翩翩舞。，提示：打一植物，谜底：柳树
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：miyu,获取的结果为：河边枝叶随风摆,条条细枝垂下来,岸边树木常见我,池塘边上翩翩舞。(提示：打一植物)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_95y9q_4nXbYgJFvWWJtuSiK_PyN8-dwwRxBR39s5T0D6kQWS8I8RYPqE_E4EOse3cPnASwwQXYD4Nr4VqvKRlbn9zELq-PpRMRFf8_cRj1uQwdXtl8w9BtG5cVgRSLcAIACDW","expires_in":7200}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+java.util.concurrent.ExecutionException: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at cn.hutool.json.JSONTokener.syntaxError(JSONTokener.java:396)
+	at cn.hutool.json.JSONParser.parseTo(JSONParser.java:51)
+	at cn.hutool.json.ObjectMapper.mapFromTokener(ObjectMapper.java:239)
+	at cn.hutool.json.ObjectMapper.mapFromStr(ObjectMapper.java:215)
+	at cn.hutool.json.ObjectMapper.map(ObjectMapper.java:98)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:210)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:187)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:142)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:125)
+	at cn.hutool.json.JSONUtil.parseObj(JSONUtil.java:87)
+	at com.pt.vx.service.api.ApiMessageService.getDuanZi(ApiMessageService.java:92)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:35)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_95y9q_4nXbYgJFvWWJtuSiK_PyN8-dwwRxBR39s5T0D6kQWS8I8RYPqE_E4EOse3cPnASwwQXYD4Nr4VqvKRlbn9zELq-PpRMRFf8_cRj1uQwdXtl8w9BtG5cVgXERcAIAQXK","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676184275633602562}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：9749 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+java.util.concurrent.ExecutionException: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at cn.hutool.json.JSONTokener.syntaxError(JSONTokener.java:396)
+	at cn.hutool.json.JSONParser.parseTo(JSONParser.java:51)
+	at cn.hutool.json.ObjectMapper.mapFromTokener(ObjectMapper.java:239)
+	at cn.hutool.json.ObjectMapper.mapFromStr(ObjectMapper.java:215)
+	at cn.hutool.json.ObjectMapper.map(ObjectMapper.java:98)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:210)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:187)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:142)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:125)
+	at cn.hutool.json.JSONUtil.parseObj(JSONUtil.java:87)
+	at com.pt.vx.service.api.ApiMessageService.getDuanZi(ApiMessageService.java:88)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:35)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_Rx3kSB7NFmWETcePmK9UqeGh6R0PGvQxKdWob8uD9HOR1DQFB137wgj4SZzXorGoSJI1ZHuGSNxc-_Co4Gvxgpr4OXcqahN51MA4wQNmzkqOYhwMB641VRupv8EFHKiADAACF","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676186745827000331}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：8565 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+java.util.concurrent.ExecutionException: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at cn.hutool.json.JSONTokener.syntaxError(JSONTokener.java:396)
+	at cn.hutool.json.JSONParser.parseTo(JSONParser.java:51)
+	at cn.hutool.json.ObjectMapper.mapFromTokener(ObjectMapper.java:239)
+	at cn.hutool.json.ObjectMapper.mapFromStr(ObjectMapper.java:215)
+	at cn.hutool.json.ObjectMapper.map(ObjectMapper.java:98)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:210)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:187)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:142)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:125)
+	at cn.hutool.json.JSONUtil.parseObj(JSONUtil.java:87)
+	at com.pt.vx.service.api.ApiMessageService.getDuanZi(ApiMessageService.java:88)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:35)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_Rx3kSB7NFmWETcePmK9UqeGh6R0PGvQxKdWob8uD9HOR1DQFB137wgj4SZzXorGoSJI1ZHuGSNxc-_Co4Gvxgpr4OXcqahN51MA4wQNmzkqOYhwMB641VRupv8EGQMiADAXHD","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676187037264019464}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：8088 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：爱情是装满酸甜苦辣咸的五味瓶，甜到心里苦到心底。酸的是温柔，甜的是幸福，辣的是坚强，苦的是伤痛！未曾尝试爱情，不会懂得；只有真正的爱，才会明白，爱不仅仅是给与快乐，品尝甜蜜，还能令人身心疲惫，感受伤痛，在爱的海洋里，痛的哭泣，痛的无语，痛的心殇。原来爱情可以如此伤人。
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_U6QQ3U4S5cXNI1Itb3NRyOoYzjsZLMPxul9t9HXPVSKVbfzxDw0hldRgIn9kKutKixPd_D9LAt05oDrOGPe7f1xBx8gkbg6GHqVPw6VpaifcgY9HHbVKo1VJc9gIZXaACAARP","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"randomInfoSplit234":{"value":"乐，品尝甜蜜，还能令人身心疲惫，感受伤痛"},"week1":{"value":"日"},"birthDay":{"value":"180"},"randomInfoSplit23456":{"value":"心殇。原来爱情可以如此伤人。"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"randomInfoSplit":{"value":"到心底。酸的是温柔，甜的是幸福，辣的是坚"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"爱情是装满酸甜苦辣咸的五味瓶，甜到心里苦"},"randomInfoSplit23":{"value":"只有真正的爱，才会明白，爱不仅仅是给与快"},"randomInfoSplit2":{"value":"强，苦的是伤痛！未曾尝试爱情，不会懂得；"},"week4":{"value":"三"},"randomInfoSplit2345":{"value":"，在爱的海洋里，痛的哭泣，痛的无语，痛的"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676187470250409993}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：10546 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - ---获取谜语--- 谜题：一间房，三面墙，小孩子，在里面。，提示：打一字，谜底：匹
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：miyu,获取的结果为：一间房，三面墙，小孩子，在里面。(提示：打一字)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_fDNNaFNLocSHpbjjxvA37fT2RX33oQOoIDadSEW4cvQv1U1A6CuD1k1lSz30yhdy4cyYNYhV7eP4uNnRGy1Oql2u77Jl75POlHrRd7FaZX22fHbmQ-abgTBZU6kAXBfAEALIM","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"一间房，三面墙，小孩子，在里面。(提示："},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676190547007275016}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：74044 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+java.util.concurrent.ExecutionException: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at cn.hutool.json.JSONTokener.syntaxError(JSONTokener.java:396)
+	at cn.hutool.json.JSONParser.parseTo(JSONParser.java:51)
+	at cn.hutool.json.ObjectMapper.mapFromTokener(ObjectMapper.java:239)
+	at cn.hutool.json.ObjectMapper.mapFromStr(ObjectMapper.java:215)
+	at cn.hutool.json.ObjectMapper.map(ObjectMapper.java:98)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:210)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:187)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:142)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:125)
+	at cn.hutool.json.JSONUtil.parseObj(JSONUtil.java:87)
+	at com.pt.vx.service.api.ApiMessageService.getDuanZi(ApiMessageService.java:88)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:35)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85__g7trjVdYdB4Eum63wsPbM-wF5zdf6PM1Dtu9eS2Jvz7nDY5hgC7-5SMrdtRIcKSB-jU8EpKfiBjfy6LWYhTOZLzQAONW10LQ9n_fBWlUWqmb-qdeqcrgBxHe5YLPTjACAUYC","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676191416922701826}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：47266 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+java.util.concurrent.ExecutionException: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at cn.hutool.json.JSONTokener.syntaxError(JSONTokener.java:396)
+	at cn.hutool.json.JSONParser.parseTo(JSONParser.java:51)
+	at cn.hutool.json.ObjectMapper.mapFromTokener(ObjectMapper.java:239)
+	at cn.hutool.json.ObjectMapper.mapFromStr(ObjectMapper.java:215)
+	at cn.hutool.json.ObjectMapper.map(ObjectMapper.java:98)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:210)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:187)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:142)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:125)
+	at cn.hutool.json.JSONUtil.parseObj(JSONUtil.java:87)
+	at com.pt.vx.service.api.ApiMessageService.getDuanZi(ApiMessageService.java:88)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:35)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_a3XbzIPQnY-NHLBt0Fs1fNob_0BqiSqTBuK_mmTV_QbusHlJ1qIMlotKHo5phXUiNY3AWK7T8NWvFCNUR-CGv1XLzE8Qf5fA9UKNuF3TbAOPob_I6opRxrJYPioKQUgAEABHL","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676192812954845184}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：9553 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+ERROR main com.pt.vx.service.vx.MessageService - 发送消息出现错误，错误为：cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+java.util.concurrent.ExecutionException: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.pt.vx.service.vx.MessageService.buildMessageContext(MessageService.java:78)
+	at com.pt.vx.service.vx.MessageService.sendMessage(MessageService.java:50)
+	at com.pt.vx.VxMessageMain.main(VxMessageMain.java:29)
+Caused by: cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at cn.hutool.json.JSONTokener.syntaxError(JSONTokener.java:396)
+	at cn.hutool.json.JSONParser.parseTo(JSONParser.java:51)
+	at cn.hutool.json.ObjectMapper.mapFromTokener(ObjectMapper.java:239)
+	at cn.hutool.json.ObjectMapper.mapFromStr(ObjectMapper.java:215)
+	at cn.hutool.json.ObjectMapper.map(ObjectMapper.java:98)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:210)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:187)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:142)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:125)
+	at cn.hutool.json.JSONUtil.parseObj(JSONUtil.java:87)
+	at com.pt.vx.service.api.ApiMessageService.getDuanZi(ApiMessageService.java:88)
+	at com.pt.vx.service.api.ApiMessageService.getApiMessage(ApiMessageService.java:35)
+	at com.pt.vx.service.vx.MessageService.lambda$buildApiInfoFuture$0(MessageService.java:90)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run$$$capture(CompletableFuture.java:1626)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_U-pIbzuB6I_1nX90bqiBRlrrzGBPM6v4kDzKWZ1KWeVvLstPudozj-EuRfShN32uYzzzEAk_t7-pEnm3DEVYV6OoCWCRxliGyikILHTI4zSKoalr2kATsY5nvAEVJFjAFAAOK","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676193471762563079}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：11815 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：duanZi,获取的结果为：网购了一块表，联系卖家。“你这个表走的不准啊”“不准退货！”……我应该怎么办？
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_7ZOIjB_alyf1XD2UfV60u-AVeF7mzEZEKYqDuHKUgVDNo6KPDIk19gs-6hui_009EiMtZMyC0WUdt4fz80FSVv6fvknGMxPGx0vjX8RNIpWBUpnTV6c08AWD7pgGASgACAWQI","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"randomInfoSplit":{"value":"准啊”“不准退货！”……我应该怎么办？"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"网购了一块表，联系卖家。“你这个表走的不"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676209434763493379}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：13689 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：duanZi,获取的结果为：她听得人家说：凡发生极重大事情的时候，只消喝一口冷水，就不会慌张。她和丈夫乘船出去游玩时，不料丈夫失足落水。她见丈夫很慌张。便道：别慌！快喝一口水！
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_zM2rM1HDfNb2fJuI8SOPap5_33Cxi99gjbQC1kR2dvKiCFFYD-ISeqYYdzQu5ZeLNrHxTnlCW7_pvjoejG77QW49x05yoeSqT-IBRITEZWpgIoMC0RGF4x3le4USNTjADANIO","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"randomInfoSplit":{"value":"消喝一口冷水，就不会慌张。她和丈夫乘船出"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"她听得人家说：凡发生极重大事情的时候，只"},"randomInfoSplit23":{"value":"张。便道：别慌！快喝一口水！"},"randomInfoSplit2":{"value":"去游玩时，不料丈夫失足落水。她见丈夫很慌"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676209785323421699}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：9122 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：在你面前我经常会笑，可朋友们都知道我是个不开心的人。
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_ntIrX5QK5yqho09sbaHSGngZ19S4Tf2rpEREBU_K5WZ93Ew5fynidg4y-AA9zEpL4bueNX5QXfeRO0qtoX6DhjgpYnCh7HdOZWn4J-ZFrGDLRWQ0tf3Ef0R0zpoAIJcABAHPQ","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"在你面前我经常会笑，可朋友们都知道我是个"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676211894555017224}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：5647 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：万物枯荣皆为你眼，我目眩神驰。而你一笑清明，潦倒我的众生。
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_qHTZHCzQGuGrkdC4xU1qWxjclF2gbeJWxF9Dhxb4XwkgIxd-gtzGjeq_hnayNGVM44j1HcInJ-yjo-d1iaearq_5DSs8hfPd-bPILNvEVabIsxnlqXa9c1ZQ6yQBVTbABAJDB","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"万物枯荣皆为你眼，我目眩神驰。而你一笑清"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676212339906215936}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：5952 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：duanZi,获取的结果为：一男同事姓谢，早上，一女同事跟此男打招呼：“早，老谢。”此男反应特大，大声怒斥：“把‘老’给我去了！”女同事立即改口：“早，谢”。
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_1o0emk2SJyUPmSWrhiJtdD3PCKo7gBgL64vRgpRAr2EqZ8imfV58ElKU1LpJR9_Ep4ZI18FbXuzi76uN4XeCsem-YBa0CCru4vVGO-p_cAEdbonls5lqlz3AJ_wLUXcAGAAJM","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"randomInfoSplit":{"value":"：“早，老谢。”此男反应特大，大声怒斥："},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"一男同事姓谢，早上，一女同事跟此男打招呼"},"randomInfoSplit2":{"value":"“把‘老’给我去了！”女同事立即改口：“"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":40037,"errmsg":"invalid template_id rid: 670a0e2f-75e854fb-69763db4"}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：16291 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：近朱者赤 近你者甜
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_hNw8FXCUXDGpWtAckWhKHjJMiIr6wt0EDcsdKJuUTOTiup-q__PgfWhSH6wD_Z0OA-0QdckDiDlHZzD5C5waNQJckTFKE-hZfBzC4kyyzeIaqYOxugLUhZ-CfdsDJYdAAATZO","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"qkwJB1zl_cFEf8VudRYeY8CKX-NmZQ0Fz5qmsAIWE9s","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"近朱者赤 近你者甜"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":40037,"errmsg":"invalid template_id rid: 670a0e5d-44841517-6f5859e7"}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：8016 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"yhVqo5mgmDo3qgm3VY6Z3woKKcgxNNimAx0xjTDfQBo","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：不要忧愁老之将至，你老了一定很可爱。而且，假如你老了十岁，我当然也同样老了十岁，世界也老了十岁，上帝也老了十岁，一切都还是一样。我只愿意凭着一点灵感的相通，时时带给彼此以慰藉，像流星的光辉，照耀我疲惫的梦寐，永远存一个安慰，纵然在离别的时候，醒来觉得甚是爱你
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_Opj58OzZ3QXTnk1_1o8nPNfb_4fcLCZZ5R1uN2zndcGaCrMPEnxU9ZFIGnn1_zArVOwibR74IdbFvaDePUGPvWar9vgFoZRr_wID3cNJJ0KFgGm7wY3ywZs7WrIZHVgAIATBP","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"yhVqo5mgmDo3qgm3VY6Z3woKKcgxNNimAx0xjTDfQBo","data":{"date":{"value":"2024-10-12"},"randomInfoSplit234":{"value":"带给彼此以慰藉，像流星的光辉，照耀我疲惫"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"randomInfoSplit":{"value":"，假如你老了十岁，我当然也同样老了十岁，"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"不要忧愁老之将至，你老了一定很可爱。而且"},"randomInfoSplit23":{"value":"是一样。我只愿意凭着一点灵感的相通，时时"},"randomInfoSplit2":{"value":"世界也老了十岁，上帝也老了十岁，一切都还"},"week4":{"value":"三"},"randomInfoSplit2345":{"value":"的梦寐，永远存一个安慰，纵然在离别的时候"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676224376350736394}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：5982 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"mSDxe0a8A6gmQlMYHTsgTFNDhFTGfWkvXXNTyhRBGqY","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：qingHua,获取的结果为：冬天的糖霜，秋天的麦芽糖，夏天的莲子羹，春天的绿豆酥，都甜不过你的笑
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_loCAIZnR6wfd2IKcmK9UqeGh6R0PGvQxKdWob6CX0fKIDn6B3S5UuyoiC7tzZgLJj49EvEre9mIM8wl7QvOowSOI0oTwJ8SXv2lvypLzvnw4S35hMKTPvhfxSpcJKOaAJAEFJ","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"mSDxe0a8A6gmQlMYHTsgTFNDhFTGfWkvXXNTyhRBGqY","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"randomInfoSplit":{"value":"春天的绿豆酥，都甜不过你的笑"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"冬天的糖霜，秋天的麦芽糖，夏天的莲子羹，"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676226527491817479}
+INFO main com.pt.vx.VxMessageMain - 程序结束，耗时：3499 ms
+INFO main com.pt.vx.service.vx.MessageService - 开始处理用户：{"Vx":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","templateId":"mSDxe0a8A6gmQlMYHTsgTFNDhFTGfWkvXXNTyhRBGqY","userName":"pt","birthDays":[{"year":2025,"month":3,"day":13,"chineseFlag":true,"countFlag":false,"info":"pt生日快乐！！"}],"address":"江苏省南京市玄武区","city":"南京"}
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - ---获取谜语--- 谜题：我主一心向明月，提示：打一字，谜底：情
+INFO pool-1-thread-1 com.pt.vx.service.api.ApiMessageService - 随机API接口为：miyu,获取的结果为：我主一心向明月(提示：打一字)
+INFO main com.pt.vx.utils.VxUtil - 获取微信token：{"access_token":"85_loCAIZnR6wfd2IKcmK9UqeGh6R0PGvQxKdWob6CX0fKIDn6B3S5UuyoiC7tzZgLJj49EvEre9mIM8wl7QvOowSOI0oTwJ8SXv2lvypLzvnw4S35hMKTPvhfxSpcSZAaAJANUV","expires_in":7200}
+INFO main com.pt.vx.utils.VxUtil - 发送微信消息：{"touser":"oqUyg6GKEG_H8zRgSXvXKJyCJoNU","template_id":"mSDxe0a8A6gmQlMYHTsgTFNDhFTGfWkvXXNTyhRBGqY","data":{"date":{"value":"2024-10-12"},"week1":{"value":"日"},"birthDay":{"value":"180"},"week2":{"value":"一"},"week":{"value":"六"},"week3":{"value":"二"},"date4":{"value":"2024-10-16"},"date3":{"value":"2024-10-15"},"date2":{"value":"2024-10-14"},"date1":{"value":"2024-10-13"},"userName":{"value":"pt"},"randomInfo":{"value":"我主一心向明月(提示：打一字)"},"week4":{"value":"三"}}}，发送的结果为：{"errcode":0,"errmsg":"ok","msgid":3676226748581969935}
