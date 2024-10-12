@@ -26,6 +26,7 @@ public class ApiMessageService {
         keyDTOS.add(KeyConfig.KEY_QING_HUA);
         keyDTOS.add(KeyConfig.KEY_DUAN_ZI);
         keyDTOS.add(KeyConfig.KEY_MI_YU);
+        keyDTOS.add(KeyConfig.KEY_ENGLISH_WORD);
     }
     public String getApiMessage(KeyDTO keyDTO, User user){
         String result = null;
@@ -35,6 +36,8 @@ public class ApiMessageService {
             result = getDuanZi();
         }else if (KeyConfig.KEY_MI_YU.equalsKey(keyDTO)){
             result = getRiddle();
+        }else if (KeyConfig.KEY_ENGLISH_WORD.equalsKey(keyDTO)){
+            result = getEnglish();
         }
         log.info("随机API接口为：{},获取的结果为：{}",keyDTO.getKey(),result);
         return result;
@@ -96,5 +99,16 @@ public class ApiMessageService {
         return questions + "(提示：" + tips + ")";
     }
 
+    /**
+     * 英语句子
+     */
+    private String getEnglish() {
+        String url = "https://api.vvhan.com/api/dailyEnglish?type=sj";
+        String result = HttpUtil.get(url);
+        JSONObject jsonObject = JSONUtil.parseObj(result);
+        JSONObject dataObject = jsonObject.getJSONObject("data");
+        String content = dataObject.getStr("en");
+        return content;
+    }
 
 }
