@@ -40,7 +40,7 @@ public class WechatConfig {
         userList.add(getUser(
                 "oqUyg6GKEG_H8zRgSXvXKJyCJoNU", //扫码关注你的测试号以后，测试平台会出现TA的微信号
                 "a_Att5b_YyPuWiqLey8cCT7iFSTeDCf0tHbEOTFWolk", //要给这个人发送的模板ID
-                "pt", //咋称呼这个人
+                "小萱宝宝", //咋称呼这个人
                 "北京市通州区", //这个人的详细地址
                 "北京", //这个人在的城市
                 new BirthDay(2025,3,13,false,true,"pt生日快乐！！"),
