@@ -47,17 +47,15 @@ public class WechatConfig {
                 new BirthDay(2024,4,27,false,true,"周年快乐")
         ));
 
-//        userList.add(getUser(
-//                "这个人扫码后的微信号",
-//                "微信消息模板ID",
-//                "这个人的称呼",
-//                "江苏省南京市玄武区",
-//                "南京",
-//                new BirthDay(1999,8,11,false,false,"生日快乐哦~~"),
-//                new BirthDay(1999,2,15,true,false,"pt生日快乐！！"),
-//                new BirthDay(2020,7,8,true,true),
-//                new BirthDay(2020,7,8,true,false,"周年快乐！！！")
-//        ));
+        userList.add(getUser(
+                "oqUyg6OfxdwuBWIARY3aujhylqn8", //扫码关注你的测试号以后，测试平台会出现TA的微信号
+                "a_Att5b_YyPuWiqLey8cCT7iFSTeDCf0tHbEOTFWolk", //要给这个人发送的模板ID
+                "小萱宝宝", //咋称呼这个人
+                "北京市通州区", //这个人的详细地址
+                "北京", //这个人在的城市
+                new BirthDay(2025,3,13,false,true,"pt生日快乐！！"),
+                new BirthDay(2024,4,27,false,true,"周年快乐")
+        ));
     }
 
     private static User getUser(String vx, String templateId, String username, String address, String city, BirthDay... birthDays){
